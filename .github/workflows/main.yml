@@ -22,8 +22,7 @@ jobs:
         uses: crazy-max/ghaction-docker-meta@v1
         with:
           images: ghcr.io/colibris-xyz/duplicacy
-          tag-semver: |
-            {{version}}
+          tag-match: v(.*)
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
