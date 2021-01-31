@@ -23,6 +23,7 @@ jobs:
         with:
           images: ghcr.io/colibris-xyz/duplicacy
           tag-match: v(.*)
+          tag-match-group: 1
       -
         name: Set up QEMU
         uses: docker/setup-qemu-action@v1
