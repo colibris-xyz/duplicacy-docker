@@ -6,7 +6,7 @@
   "regexManagers": [{
     "fileMatch": ["^Dockerfile$"],
     "matchStrings": ["ARG DUPLICACY_VERSION=(?<currentValue>.*?)\n"],
-    "depNameTemplate": "duplicacy",
+    "depNameTemplate": "gilbertchen/duplicacy",
     "datasourceTemplate": "github-releases"
   }]
 }
