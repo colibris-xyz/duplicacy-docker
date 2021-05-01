@@ -12,6 +12,11 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+       include:
+         - docker-build-platform: linux/amd64
+           duplicacy-platform: linux_x64
     steps:
       -
         name: Checkout
@@ -47,6 +52,8 @@ jobs:
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
+          platforms: ${{ docker-build-platform }}
+          build-args: DUPLICACY_PLATFORM=${{ duplicacy-platform }}
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
