@@ -19,6 +19,12 @@ jobs:
            duplicacy-platform: linux_x64
          - docker-build-platform: linux/arm64
            duplicacy-platform: linux_arm64
+         - docker-build-platform: linux/arm/v6
+           duplicacy-platform: linux_arm
+         - docker-build-platform: linux/arm/v7
+           duplicacy-platform: linux_arm
+         - docker-build-platform: linux/386
+           duplicacy-platform: linux_i386
     steps:
       -
         name: Checkout
