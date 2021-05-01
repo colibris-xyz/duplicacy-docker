@@ -17,6 +17,8 @@ jobs:
        include:
          - docker-build-platform: linux/amd64
            duplicacy-platform: linux_x64
+         - docker-build-platform: linux/arm64
+           duplicacy-platform: linux_arm64
     steps:
       -
         name: Checkout
