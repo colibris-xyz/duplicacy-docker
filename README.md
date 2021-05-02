@@ -6,5 +6,7 @@
 ## Usage
 
 ```sh
-docker run --rm -v /path/to/repository/.duplicacy:/duplicacy/.duplicacy -v /path/to/repository/:/duplicacy ghcr.io/colibris-xyz/duplicacy backup
+docker run --rm -v /path/to/repository/.duplicacy:/duplicacy/.duplicacy -v /path/to/repository/:/duplicacy ghcr.io/colibris-xyz/duplicacy:latest <duplicacy-command>
 ```
+
+❗ __NB:__ You need to set the repository path to `/duplicacy` in the `preferences` file (because this is where the directory is mounted into the container).
