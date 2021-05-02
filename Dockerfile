@@ -2,7 +2,7 @@ FROM alpine:3.13.5
 
 RUN apk add --no-cache wget
 
-ARG TARGETPLATFORM=linux/test
+ARG TARGETPLATFORM
 ARG DUPLICACY_VERSION=2.7.2
 
 RUN \
