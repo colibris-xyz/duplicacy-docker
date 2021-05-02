@@ -5,7 +5,7 @@ RUN apk add --no-cache wget
 ARG TARGETPLATFORM=linux/amd64
 ARG DUPLICACY_VERSION=2.7.2
 
-RUN 
+RUN \
   if [ "$TARGETPLATFORM" == "linux/arm64" ]; then \
     DUPLICACY_PLATFORM="linux_arm64"; \
   elif [[ "$TARGETPLATFORM" == "linux/arm/"* ]]; then \
