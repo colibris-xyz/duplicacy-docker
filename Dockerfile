@@ -15,7 +15,7 @@ RUN \
   else \
     DUPLICACY_PLATFORM="linux_x64"; \
   fi; \
-  wget -q -O /usr/local/bin/duplicacy "https://github.com/gilbertchen/duplicacy/releases/download/v${DUPLICACY_VERSION}/duplicacy_${DUPLICACY_PLATFORM}_${DUPLICACY_VERSION}" \
+  wget -O /usr/local/bin/duplicacy "https://github.com/gilbertchen/duplicacy/releases/download/v${DUPLICACY_VERSION}/duplicacy_${DUPLICACY_PLATFORM}_${DUPLICACY_VERSION}" \
   && chmod +x /usr/local/bin/duplicacy
 
 WORKDIR /duplicacy
