@@ -12,7 +12,7 @@ RUN \
     "linux/386" ) DUPLICACY_PLATFORM="linux_i386" ;; \
     * ) DUPLICACY_PLATFORM="linux_x64" ;; \
   esac; \
-  wget -O /usr/local/bin/duplicacy https://github.com/gilbertchen/duplicacy/releases/download/v${DUPLICACY_VERSION}/duplicacy_${DUPLICACY_PLATFORM}_${DUPLICACY_VERSION} \
+  wget -q -O /usr/local/bin/duplicacy https://github.com/gilbertchen/duplicacy/releases/download/v${DUPLICACY_VERSION}/duplicacy_${DUPLICACY_PLATFORM}_${DUPLICACY_VERSION} \
   && chmod +x /usr/local/bin/duplicacy
 
 WORKDIR /duplicacy
