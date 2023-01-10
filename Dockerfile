@@ -3,7 +3,7 @@ FROM alpine:3.17.0
 RUN apk add --no-cache wget
 
 ARG TARGETPLATFORM
-ARG DUPLICACY_VERSION=2.7.2
+ARG DUPLICACY_VERSION=v3.1.0
 
 RUN \
   case $TARGETPLATFORM in \
@@ -12,7 +12,7 @@ RUN \
     "linux/386" ) DUPLICACY_PLATFORM="linux_i386" ;; \
     * ) DUPLICACY_PLATFORM="linux_x64" ;; \
   esac; \
-  wget -q -O /usr/local/bin/duplicacy https://github.com/gilbertchen/duplicacy/releases/download/v${DUPLICACY_VERSION}/duplicacy_${DUPLICACY_PLATFORM}_${DUPLICACY_VERSION} \
+  wget -q -O /usr/local/bin/duplicacy https://github.com/gilbertchen/duplicacy/releases/download/${DUPLICACY_VERSION}/duplicacy_${DUPLICACY_PLATFORM}_${DUPLICACY_VERSION:1} \
   && chmod +x /usr/local/bin/duplicacy
 
 WORKDIR /duplicacy
