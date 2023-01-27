@@ -1,5 +1,6 @@
-[![GitHub release](https://img.shields.io/github/v/release/colibris-xyz/duplicacy-docker.svg?style=flat)](https://github.com/colibris-xyz/duplicacy-docker/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/colibris-xyz/duplicacy-docker)](https://github.com/colibris-xyz/duplicacy-docker/blob/main/LICENSE)
+[![Releases](https://img.shields.io/gitlab/v/release/colibris-xyz/duplicacy-docker?gitlab_url=https%3A%2F%2Fframagit.org)](https://framagit.org/colibris-xyz/duplicacy-docker/-/releases)
+[![Build status](https://img.shields.io/gitlab/pipeline-status/colibris-xyz/duplicacy-docker?branch=main&gitlab_url=https%3A%2F%2Fframagit.org)](https://framagit.org/colibris-xyz/duplicacy-docker/-/pipelines)
+[![License](https://img.shields.io/gitlab/license/colibris-xyz/duplicacy-docker?gitlab_url=https%3A%2F%2Fframagit.org)](https://framagit.org/colibris-xyz/duplicacy-docker/-/blob/main/LICENSE)
 
 # Docker image for Duplicacy
 
